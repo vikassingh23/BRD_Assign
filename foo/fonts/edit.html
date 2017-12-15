@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--<link rel="icon" href="../../favicon.ico">-->
+
+	<title>Editing rows - FooTable</title>
+ <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+
+	<!-- Bootstrap core CSS -->
+	<link href="C:/Users/Admin/Desktop/foo/bootstrap.min.css" rel="stylesheet">
+	<link href="C:/Users/Admin/Desktop/foo/bootstrap-theme.min.css" rel="stylesheet">
+
+	<!-- Prism -->
+	<link href="C:/Users/Admin/Desktop/foo/prism.css" rel="stylesheet">
+
+	<!-- FooTable Bootstrap CSS -->
+	<link href="C:/Users/Admin/Desktop/foo/footable.bootstrap.min.css" rel="stylesheet">
+<!-- <link href="C:/Users/Admin/Desktop/foo/footable.bootstrap.css" rel="stylesheet"> -->
+	<!-- Custom styles for this template -->
+	<!-- <link href="../../css/docs.css" rel="stylesheet"> -->
+
+	<!-- <script src="../../js/demo-rows.js"></script> -->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<!-- <style type="text/css">
+		.scrollit {
+    overflow:scroll;
+    height:100px;
+}
+	</style> -->
+	
+</head>
+
+<body class="docs">
+
+<!-- Fixed navbar -->
+
+<!-- Header -->
+<div class="jumbotron">
+
+	<div class="container">
+		<h1>Demo Form</h1>
+	</div>
+
+</div>
+<!-- Content -->
+<div class="container">
+	<div class="docs-section">
+		
+		<div class="example">
+			<table id="editing-example" class="table" data-paging="true" data-filtering="true" data-sorting="true">
+				<thead>
+				<tr>
+					<th data-name="id" data-breakpoints="xs" data-type="number">ID</th>
+					<th data-name="firstName">First Name</th>
+					<th data-name="middleName">Middle Name</th>
+					<th data-name="middleName">Middle Name</th>
+					<th data-name="middleName">Middle Name</th>
+					<th data-name="middleName">Middle Name</th>
+					<th data-name="middleName">Middle Name</th>
+					<th data-name="middleName">Middle Name</th>
+					<th data-name="lastName">Last Name</th>
+					<th data-name="jobTitle" data-breakpoints="xs">Job Title</th>
+					<th data-name="startedOn" data-breakpoints="xs sm" data-type="date" data-format-string="MMMM Do YYYY">Started On</th>
+					<th data-name="dob" data-breakpoints="xs sm md" data-type="date" data-format-string="MMMM Do YYYY">Date of Birth</th>
+				</tr>
+				</thead>
+				<tbody>
+				<div class="scrollit">
+				<tr data-expanded="true">
+					<td>1</td>
+					<td>Dennise</td>
+					<td>Den</td>
+					<td>Fuhrman</td>
+					<td>High School History Teacher</td>
+					<td>November 8th 2011</td>
+					<td>July 25th 1960</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Dennise</td>
+					<td>Den</td>
+					<td>Fuhrman</td>
+					<td>High School History Teacher</td>
+					<td>November 8th 2011</td>
+					<td>July 25th 1960</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Dennise</td>
+					<td>Den</td>
+					<td>Fuhrman</td>
+					<td>High School History Teacher</td>
+					<td>November 8th 2011</td>
+					<td>July 25th 1960</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Dennise</td>
+					<td>Den</td>
+					<td>Fuhrman</td>
+					<td>High School History Teacher</td>
+					<td>November 8th 2011</td>
+					<td>July 25th 1960</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Dennise</td>
+					<td>Den</td>
+					<td>Fuhrman</td>
+					<td>High School History Teacher</td>
+					<td>November 8th 2011</td>
+					<td>July 25th 1960</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Dennise</td>
+					<td>Den</td>
+					<td>Fuhrman</td>
+					<td>High School History Teacher</td>
+					<td>November 8th 2011</td>
+					<td>July 25th 1960</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Dennise</td>
+					<td>Den</td>
+					<td>Fuhrman</td>
+					<td>High School History Teacher</td>
+					<td>November 8th 2011</td>
+					<td>July 25th 1960</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Dennise</td>
+					<td>Den</td>
+					<td>Fuhrman</td>
+					<td>High School History Teacher</td>
+					<td>November 8th 2011</td>
+					<td>July 25th 1960</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Dennise</td>
+					<td>Den</td>
+					<td>Fuhrman</td>
+					<td>High School History Teacher</td>
+					<td>November 8th 2011</td>
+					<td>July 25th 1960</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Dennise</td>
+					<td>Den</td>
+					<td>Fuhrman</td>
+					<td>High School History Teacher</td>
+					<td>November 8th 2011</td>
+					<td>July 25th 1960</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Dennise</td>
+					<td>Den</td>
+					<td>Fuhrman</td>
+					<td>High School History Teacher</td>
+					<td>November 8th 2011</td>
+					<td>July 25th 1960</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Dennise</td>
+					<td>Den</td>
+					<td>Fuhrman</td>
+					<td>High School History Teacher</td>
+					<td>November 8th 2011</td>
+					<td>July 25th 1960</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Dennise</td>
+					<td>Den</td>
+					<td>Fuhrman</td>
+					<td>High School History Teacher</td>
+					<td>November 8th 2011</td>
+					<td>July 25th 1960</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Dennise</td>
+					<td>Den</td>
+					<td>Fuhrman</td>
+					<td>High School History Teacher</td>
+					<td>November 8th 2011</td>
+					<td>July 25th 1960</td>
+				</tr>
+				</div>
+
+				</tbody>
+			</table>
+
+			<!-- Modal -->
+			<div class="modal fade" id="editor-modal" tabindex="-1" role="dialog" aria-labelledby="editor-title">
+				<style scoped>
+					/* provides a red astrix to denote required fields */
+					.form-group.required .control-label:after {
+						content:"*";
+						color:red;
+						margin-left: 4px;
+					}
+				</style>
+				<div class="modal-dialog" role="document">
+					<form class="modal-content form-horizontal" id="editor">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="editor-title">Add Row</h4>
+						</div>
+						<div class="modal-body">
+							<input type="number" id="id" name="id" class="hidden"/>
+							<div class="form-group required">
+								<label for="firstName" class="col-sm-3 control-label">First Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+								</div>
+							</div>
+							<div class="form-group required">
+								<label for="lastName" class="col-sm-3 control-label">Last Name</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="jobTitle" class="col-sm-3 control-label">Job Title</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="jobTitle" name="jobTitle" placeholder="Job Title">
+								</div>
+							</div>
+							<div class="form-group required">
+								<label for="startedOn" class="col-sm-3 control-label">Started On</label>
+								<div class="col-sm-9">
+									<input type="date" class="form-control" id="startedOn" name="startedOn" placeholder="Started On" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="dob" class="col-sm-3 control-label">Date of Birth</label>
+								<div class="col-sm-9">
+									<input type="date" class="form-control" id="dob" name="dob" placeholder="Date of Birth">
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-primary">Save changes</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</div> <!-- /container -->
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="C:/Users/Admin/Desktop/foo/jquery.min.js"></script>
+<script src="C:/Users/Admin/Desktop/foo/bootstrap.min.js"></script>
+<script src="C:/Users/Admin/Desktop/foo/prism.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!-- <script src="../../js/ie10-viewport-bug-workaround.js"></script> -->
+<!-- Add in any FooTable dependencies we may need -->
+<script src="C:/Users/Admin/Desktop/foo/moment.min.js"></script>
+<!-- Add in FooTable itself -->
+<script src="C:/Users/Admin/Desktop/foo/footable.js"></script>
+<!-- <script src="C:/Users/Admin/Desktop/foo/footable.min.js"></script> -->
+
+<!-- Initialize FooTable -->
+<script>
+	jQuery(function($){
+		var $modal = $('#editor-modal'),
+			$editor = $('#editor'),
+			$editorTitle = $('#editor-title'),
+			ft = FooTable.init('#editing-example', {
+				editing: {
+					enabled: true,
+					addRow: function(){
+						$modal.removeData('row');
+						$editor[0].reset();
+						$editorTitle.text('Add a new row');
+						$modal.modal('show');
+					},
+					editRow: function(row){
+						var values = row.val();
+						$editor.find('#id').val(values.id);
+						$editor.find('#firstName').val(values.firstName);
+						$editor.find('#lastName').val(values.lastName);
+						$editor.find('#jobTitle').val(values.jobTitle);
+						$editor.find('#startedOn').val(values.startedOn.format('YYYY-MM-DD'));
+						$editor.find('#dob').val(values.dob.format('YYYY-MM-DD'));
+
+						$modal.data('row', row);
+						$editorTitle.text('Edit row #' + values.id);
+						$modal.modal('show');
+					},
+					deleteRow: function(row){
+						if (confirm('Are you sure you want to delete the row?')){
+							row.delete();
+						}
+					}
+				}
+			}),
+			uid = 10;
+
+		$editor.on('submit', function(e){
+			if (this.checkValidity && !this.checkValidity()) return;
+			e.preventDefault();
+			var row = $modal.data('row'),
+				values = {
+					id: $editor.find('#id').val(),
+					firstName: $editor.find('#firstName').val(),
+					lastName: $editor.find('#lastName').val(),
+					jobTitle: $editor.find('#jobTitle').val(),
+					startedOn: moment($editor.find('#startedOn').val(), 'YYYY-MM-DD'),
+					dob: moment($editor.find('#dob').val(), 'YYYY-MM-DD')
+				};
+
+			if (row instanceof FooTable.Row){
+				row.val(values);
+			} else {
+				values.id = uid++;
+				ft.rows.add(values);
+			}
+			$modal.modal('hide');
+		});
+	});
+</script>
+</body>
+</html>
